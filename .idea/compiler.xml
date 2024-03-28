@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zhangdh-business-starter" />
+        <module name="zhangdh-business-facade" />
+        <module name="zhangdh-account-starter" />
+        <module name="zhangdh-storage-facade" />
+        <module name="zhangdh-order-core" />
+        <module name="zhangdh-common" />
+        <module name="zhangdh-order-facade" />
+        <module name="zhangdh-account-facade" />
+        <module name="zhangdh-storage-starter" />
+        <module name="zhangdh-account-core" />
+        <module name="zhangdh-business-core" />
+        <module name="zhangdh-storage-core" />
+        <module name="zhangdh-order-starter" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

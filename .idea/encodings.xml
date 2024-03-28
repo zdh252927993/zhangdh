@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/zhangdh-storage-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/zhangdh-storage-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/zhangdh-storage-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/zhangdh-storage-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/zhangdh-storage-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-storage/zhangdh-storage-starter/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
