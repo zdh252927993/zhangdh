@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.DubboService;
 
+import javax.annotation.Resource;
+
 /**
  * @author yinshi
  * @date 2024/3/27
@@ -16,7 +18,7 @@ import org.apache.dubbo.config.annotation.DubboService;
 @Slf4j
 @DubboService
 public class OrderServiceImpl implements OrderService {
-    @DubboReference
+    @Resource
     private OrderManager orderManager;
 
     @DubboReference

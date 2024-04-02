@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class BusinessServiceImpl implements BusinessService {
-    @DubboReference
+    @DubboReference(timeout = 30*1000)
     private StorageService storageService;
 
     @DubboReference
@@ -24,8 +24,8 @@ public class BusinessServiceImpl implements BusinessService {
     @Override
     public void purchase(String userId, String commodityCode, int orderCount) {
 
+        orderService.create(userId, commodityCode, orderCount);
         storageService.deduct(commodityCode, orderCount);
 
-        orderService.create(userId, commodityCode, orderCount);
     }
 }

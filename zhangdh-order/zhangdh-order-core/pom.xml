@@ -23,45 +23,16 @@
             <artifactId>zhangdh-order-facade</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <groupId>com.zhangdh</groupId>
+            <artifactId>zhangdh-account-facade</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.zhangdh</groupId>
-            <artifactId>zhangdh-account-facade</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>zhangdh-framework-core</artifactId>
         </dependency>
 
-        <!--Mybatis-Plus-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-generator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-        </dependency>
-        <!--mysql数据库驱动-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-registry-nacos</artifactId>
-        </dependency>
+
 
     </dependencies>
 

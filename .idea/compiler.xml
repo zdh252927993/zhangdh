@@ -15,11 +15,13 @@
         <module name="zhangdh-common" />
         <module name="zhangdh-order-facade" />
         <module name="zhangdh-account-facade" />
+        <module name="zhangdh-framework-core" />
         <module name="zhangdh-storage-starter" />
         <module name="zhangdh-account-core" />
         <module name="zhangdh-business-core" />
         <module name="zhangdh-storage-core" />
         <module name="zhangdh-order-starter" />
+        <module name="zhangdh-framework-facade" />
       </profile>
     </annotationProcessing>
   </component>

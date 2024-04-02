@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@TableName("order")
+@TableName("zhangdh_order")
 @ApiModel(value = "OrderEntity对象", description = "订单")
 public class OrderEntity implements Serializable {
 
