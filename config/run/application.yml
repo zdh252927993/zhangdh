@@ -1,0 +1,141 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  cache:
+    redis:
+      key-prefix: zhangdh#
+  cloud:
+    nacos:
+      # 配置中心
+      config:
+        group: ZHANGDH
+        # 这个就表示 在我们nacos命名空间id为 dev中 有一个data-id 为 demo-service.yml 的配置文件 读取这个里面的配置
+        file-extension: yml
+        config-retry-time: 300000
+      # 发布到注册中心 （如果没有使用可以不配）
+      discovery:
+        # 命名空间id(此处不用public,因public初始化的空间, id为空)
+        namespace: ${spring.cloud.nacos.config.namespace}
+        # nacos的ip地址和端口
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.50.100.133:31721/seata_yinshi?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123
+    hikari:
+      pool-name: HikariCP
+      minimum-idle: 2
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+logging:
+  config: ./config/run/logback-spring.xml
+  file:
+    path: ./logs/${spring.application.name}
+  level:
+    root: info
+  logback:
+    rollingpolicy:
+      max-file-size: 500MB
+      max-history: 30
+      total-size-cap: 20GB
+
+#ribbon，负载均衡
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#server:
+#  servlet:
+#    context-path:
+# 暴露所有监控信息为HTTP
+#management:
+#  endpoints:
+#    # 默认开启所有监控端点信息
+#    enabled-by-default: true
+#    web:
+#      exposure:
+#        # 以web方式暴露所有端点
+#        include: '*'
+dubbo:
+  application:
+    name: dubbo-${spring.application.name}
+  protocol:
+    name: dubbo
+    port: 1${server.port}
+  #    name: http
+  #    server: servlet
+  #    port: ${server.port}
+  #    contextpath: ${server.servlet.context-path}/dubbo
+  registry:
+    #    username: nacos
+    #    password: nacos
+    address: nacos://${spring.cloud.nacos.config.server-addr}
+    parameters:
+      namespace: ${spring.cloud.nacos.config.namespace}
+#坑，group加了就获取不到provider，consumer与provider对于group的处理不同
+#    group: test
+#启动检查provider接口是否存在，接口单独定义，整体需要检查减少错误
+  consumer:
+    check: false
+
+#seata:
+#  enabled: true
+#  application-id: dubbo-samples-seata
+#  tx-service-group: default_tx_group
+#  service:
+#    vgroup-mapping:
+#      default_tx_group: default
+#    grouplist:
+#      default: ${seata.address:127.0.0.1}:${seata.port:8091}
+#  registry:
+#    type: file
+#  config:
+#    type: file
+
+seata:
+  application-id: ${spring.application.name}
+  config:
+    type: nacos
+    nacos:
+      server-addr: ${spring.cloud.nacos.config.server-addr}
+      group: SEATA_GROUP
+      namespace: ${spring.cloud.nacos.config.namespace}
+      dataId: 'seataServer.properties'
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: ${spring.cloud.nacos.config.server-addr}
+      namespace: ${spring.cloud.nacos.config.namespace}
+      group : SEATA_GROUP
+  tx-service-group: default_tx_group
+#  service:
+#    vgroup-mapping:
+#      default_tx_group: default
+
+--- #分割线，代表着线以上是一个环境，线以下是一个环境
+spring:
+  config:
+    activate:
+      on-profile: dev #开发环境
+  cloud:
+    nacos:
+      # 配置中心
+      config:
+        # 命名空间id(此处不用public,因public初始化的空间, id为空)
+        namespace: faa7ac7d-d1aa-4993-a036-b838088f47c5
+        # nacos的ip地址和端口 120.79.64.17:10848
+        server-addr: 10.50.100.135:30000

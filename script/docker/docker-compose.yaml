@@ -1,0 +1,9 @@
+version: "3.1"
+services:
+  seata-server:
+    image: seataio/seata-server:1.2.0
+    volumes:
+      - /Users/zhangdh/IdeaProjects/yinshi/zhangdh/script/seata/application.yml:/seata-server/resources/application.yml
+    ports:
+      - "7091:7091"
+      - "8091:8091"
