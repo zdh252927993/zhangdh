@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      # 配置中心
+      config:
+        group: ZHANGDH
+        # 这个就表示 在我们nacos命名空间id为 dev中 有一个data-id 为 demo-service.yml 的配置文件 读取这个里面的配置
+        file-extension: yml
+        refresh: true
+        shared-configs[0]:
+          dataId: route.yml
+          group: ZHANGDH
+          refresh: true

@@ -19,7 +19,7 @@ public class BusinessApplication {
     public static void main(String[] args) {
         long time = System.currentTimeMillis();
         ConfigurableApplicationContext context = new SpringApplicationBuilder(BusinessApplication.class)
-                .properties("spring.config.name:application", "config/run/application.yml")
+                .properties("spring.config.name:bootstrap", "config/run/bootstrap.yml")
                 .properties("spring.application.name=" + ServiceNameConstant.BUSINESS)
                 .build().run(args);
         int length = context.getBeanDefinitionNames().length;

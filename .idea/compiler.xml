@@ -11,17 +11,24 @@
         <module name="zhangdh-business-facade" />
         <module name="zhangdh-account-starter" />
         <module name="zhangdh-storage-facade" />
+        <module name="zhangdh-jobflow-starter" />
         <module name="zhangdh-order-core" />
+        <module name="zhangdh-auth" />
         <module name="zhangdh-common" />
         <module name="zhangdh-order-facade" />
         <module name="zhangdh-account-facade" />
+        <module name="zhangdh-gateway" />
         <module name="zhangdh-framework-core" />
+        <module name="zhangdh-jobflow-facade" />
         <module name="zhangdh-storage-starter" />
         <module name="zhangdh-account-core" />
         <module name="zhangdh-business-core" />
         <module name="zhangdh-storage-core" />
+        <module name="zhangdh-jobflow-core" />
+        <module name="zhangdh-framework-starter" />
         <module name="zhangdh-order-starter" />
         <module name="zhangdh-framework-facade" />
+        <module name="zhangdh-admin" />
       </profile>
     </annotationProcessing>
   </component>

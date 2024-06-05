@@ -11,6 +11,10 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot-maven-plugin.version>2.5.0</spring-boot-maven-plugin.version>
+        <skipTests>true</skipTests>
+        <fastjson.version>2.0.9</fastjson.version>
+        <sa-token.version>1.38.0</sa-token.version>
     </properties>
 
     <modules>
@@ -20,6 +24,10 @@
         <module>zhangdh-common</module>
         <module>zhangdh-business</module>
         <module>zhangdh-framework</module>
+        <module>zhangdh-gateway</module>
+        <module>zhangdh-jobflow</module>
+        <module>zhangdh-auth</module>
+        <module>zhangdh-admin</module>
     </modules>
 
     <dependencyManagement>
@@ -31,21 +39,31 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <!--    公共组件    -->
         <dependency>
-            <groupId>com.zhangdh</groupId>
-            <artifactId>zhangdh-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
         </dependency>
-        <!--    yaml代码提示    -->
+        <!--    application.yaml代码提示    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <!--    bootstrap.yaml代码提示    -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
         </dependency>
     </dependencies>
 
@@ -56,8 +74,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>

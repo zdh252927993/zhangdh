@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: admin
+  cloud:
+    nacos:
+      # 配置中心
+      config:
+        group: ZHANGDH
+        # 这个就表示 在我们nacos命名空间id为 dev中 有一个data-id 为 demo-service.yml 的配置文件 读取这个里面的配置
+        file-extension: yml
+        namespace: faa7ac7d-d1aa-4993-a036-b838088f47c5
+        server-addr: 10.50.100.135:30000

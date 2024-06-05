@@ -1,4 +1,4 @@
-create database seata_yinshi character set utf8mb4 collate utf8mb4_general_ci;
+create database zhangdh_seata character set utf8mb4 collate utf8mb4_general_ci;
 use seata;
 CREATE TABLE IF NOT EXISTS `global_table`
 (

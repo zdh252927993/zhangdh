@@ -11,6 +11,10 @@
     <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-facade/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-account/zhangdh-account-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-business/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-business/zhangdh-business-core/src/main/java" charset="UTF-8" />
@@ -29,6 +33,16 @@
     <file url="file://$PROJECT_DIR$/zhangdh-framework/zhangdh-framework-facade/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-framework/zhangdh-framework-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-framework/zhangdh-framework-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/zhangdh-jobflow-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/zhangdh-jobflow-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/zhangdh-jobflow-facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/zhangdh-jobflow-facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/zhangdh-jobflow-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhangdh-jobflow/zhangdh-jobflow-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-order/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zhangdh-order/zhangdh-order-core/src/main/java" charset="UTF-8" />
